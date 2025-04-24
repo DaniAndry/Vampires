@@ -1,0 +1,50 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Bed.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Beds.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/Vampires.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/Vampire.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Transition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorTransition/DoctorHealRunTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/Doctor.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorStateMachine.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/State.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorState/DoctorHealState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorState/DoctorIdleState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorState/DoctorMoveState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStateMachine.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStates/ExitState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Money/MoneyConroller.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Money/BuyController.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Money/BuyButton.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Money/MoneyUI.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStates/HealCompleteState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStates/HealRunState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStates/HealState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStates/IdleState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStates/MoveState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireStates/RunState.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorTransition/DoctorIdleTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorTransition/DoctorMoveTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctors.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Doctor/DoctorTransition/DoctorHealTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireTransitions/ExitTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireTransitions/HealCompleteTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireTransitions/HealRunTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireTransitions/HealTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireTransitions/IdleTransition.cs",
+      "C:/Users/Andrey/Desktop/GIT/Lumber2/Vampirs/LunaTemp/stage3/processed-scripts/Assets/Scripts/Vampire/VampireTransitions/MoveTransition.cs"
+    ],
+    [
+      "C:/Users/Andrey/Desktop/Luna/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Users/Andrey/Desktop/Luna/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Users/Andrey/Desktop/Luna/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
