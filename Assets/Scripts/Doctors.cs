@@ -10,7 +10,7 @@ internal class Doctors : MonoBehaviour
     {
         foreach (var doctor in _doctors)
         {
-            if (!doctor.IsBusy)
+            if (doctor.gameObject.activeSelf && !doctor.IsBusy)
             {
                 doctor.ToHeal(bed);
             }

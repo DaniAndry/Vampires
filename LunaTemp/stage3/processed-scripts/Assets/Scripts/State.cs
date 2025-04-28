@@ -10,13 +10,12 @@ public abstract class State : MonoBehaviour
     protected Animator Animator { get; private set; }
     protected Bed Target { get; private set; }
 
-    public void Enter(Animator animator, Bed bed)
+    public virtual void Enter(Animator animator, Bed bed)
     {
         if (!enabled)
         {
             Animator = animator;
             Target = bed;
-                
             enabled = true;
 
             foreach (var transition in _transitions)
@@ -27,7 +26,7 @@ public abstract class State : MonoBehaviour
         }
     }
 
-    public void Exit()
+    public virtual void Exit()
     {
         if (enabled)
         {
@@ -52,12 +51,7 @@ public abstract class State : MonoBehaviour
 
         return null;
     }
-
-    public void ReloadTarget()
-    {
-         Target = null;
-    }
-        
+    
     public void ChangeTarget(Bed target)
     {
         Target = target;

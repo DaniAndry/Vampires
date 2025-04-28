@@ -15,11 +15,10 @@ public class Beds : MonoBehaviour
             if (bed != null && bed.gameObject.activeSelf && !bed.IsBusy)
             {
                 _vampires.AssignBedToFirstAvailable(bed);
-                
             }
             else if (bed != null && bed.gameObject.activeSelf && bed.NeedToHeal && bed.IsBusy && bed.IsReadyToHeal)
             {
-           _doctors.GoToHeal(bed);
+                _doctors.GoToHeal(bed);
             }
 
             // Debug.Log(bed.NeedToHeal);

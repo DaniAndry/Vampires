@@ -10,7 +10,7 @@ public abstract class State : MonoBehaviour
     protected Animator Animator { get; private set; }
     protected Bed Target { get; private set; }
 
-    public void Enter(Animator animator, Bed bed)
+    public virtual void Enter(Animator animator, Bed bed)
     {
         if (!enabled)
         {
@@ -26,7 +26,7 @@ public abstract class State : MonoBehaviour
         }
     }
 
-    public void Exit()
+    public virtual void Exit()
     {
         if (enabled)
         {

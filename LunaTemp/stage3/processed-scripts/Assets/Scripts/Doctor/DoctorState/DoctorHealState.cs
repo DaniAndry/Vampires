@@ -6,12 +6,13 @@ namespace Doctor.DoctorState
     {
         private const string StateName = "Heal";
 
-        private void OnEnable()
+        private void Update()
         {
-            //Animator.Play(StateName);
-            Target.DoctorOnPlace();
-            ReloadTarget(); 
-
+            if (Target.IsBusy && Target != null)
+            {
+                Debug.Log("Doctor Healing");
+                Target.DoctorOnPlace();
+            }
         }
     }
 }

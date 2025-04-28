@@ -19,9 +19,11 @@ public class Beds : MonoBehaviour
             else if (bed != null && bed.gameObject.activeSelf && bed.NeedToHeal && bed.IsBusy && bed.IsReadyToHeal)
             {
                 _doctors.GoToHeal(bed);
-
-                Debug.Log(bed.gameObject.name);
             }
+
+            // Debug.Log(bed.NeedToHeal);
+            // Debug.Log(bed.IsBusy);
+            // Debug.Log(bed.IsReadyToHeal);
         }
     }
 }

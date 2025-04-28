@@ -12,9 +12,9 @@ namespace Vampire.VampireTransitions
 
         private void Exit()
         {
-            NeedTransit = true;
             Target.EmptyBed();
             Target.HealComplete();
+            NeedTransit = true;
         }
 
         public override void Enable()

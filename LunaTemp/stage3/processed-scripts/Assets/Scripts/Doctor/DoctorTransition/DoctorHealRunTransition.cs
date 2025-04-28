@@ -1,15 +1,31 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace Doctor.DoctorTransition
 {
     public class DoctorHealRunTransition : Transition
     {
-        private void Start()
+        private bool _isRunning = false;
+
+        private void Update()
         {
-            Doctor.CompleteHealing();
-            NeedTransit = true;
+            if (!_isRunning && Doctor.IsBusy && Target.OnPlace)
+            {
+                StartCoroutine(Complete());
+            }
         }
 
+        private IEnumerator Complete()
+        {
+            _isRunning = true;
+
+            yield return new WaitForSeconds(1f);
+
+            Doctor.CompleteHealing();
+            NeedTransit = true;
+
+            _isRunning = false; 
+        }
 
         public override void Enable()
         {

@@ -13,7 +13,6 @@ namespace Vampire.VampireTransitions
         private void Exit()
         {
             NeedTransit = true;
-            Debug.Log(Target.IsBusy);
         }
 
         public override void Enable()

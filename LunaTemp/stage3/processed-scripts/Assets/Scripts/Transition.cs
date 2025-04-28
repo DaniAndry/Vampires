@@ -6,10 +6,10 @@ public abstract class Transition : MonoBehaviour
 
     public State TargetState => _targetState;
     public bool NeedTransit { get; protected set; }
-    protected Bed Target ;
+    protected Bed Target;
     protected Vampire.Vampire Vampire;
     protected Doctor.Doctor Doctor;
-    
+
 
     private void OnEnable()
     {

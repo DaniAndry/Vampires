@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Money;
 using UnityEngine;
 
 namespace Vampire
@@ -7,6 +9,9 @@ namespace Vampire
     {
         [SerializeField] private List<Vampire> _vampires;
         [SerializeField] private float _moveSpeed = 2f;
+        [SerializeField] private Vampire _vampirePrefab;
+        [SerializeField] private Transform _vampireExitPoint;
+        [SerializeField] private MoneyConroller _money;
 
         private Queue<Vector3> _waitingPositions = new Queue<Vector3>();
 
@@ -23,16 +28,36 @@ namespace Vampire
             if (_vampires.Count > 0)
             {
                 Vampire firstVampire = _vampires[0];
-                firstVampire.ToFirst(bed);
+                firstVampire.InitPoint(_vampireExitPoint, _money);
                 _vampires.RemoveAt(0);
-                
+                firstVampire.ToFirst(bed);
+
                 MoveRemainingVampires();
+                
+                SpawnVampireAtEnd();
             }
         }
 
-        public void AddVampire(Vampire vampire)
+        private void SpawnVampireAtEnd()
+        {
+            Vector3 spawnPosition = (_waitingPositions.Count > 0) 
+                ? GetLastWaitingPosition() 
+                : transform.position;
+
+            Vampire newVampire = Instantiate(_vampirePrefab, spawnPosition, Quaternion.identity, transform);
+            AddVampire(newVampire);
+        }
+
+        private Vector3 GetLastWaitingPosition()
+        {
+            Vector3[] positions = _waitingPositions.ToArray();
+            return positions[positions.Length - 1];
+        }
+
+        private void AddVampire(Vampire vampire)
         {
             _vampires.Add(vampire);
+            vampire.InitPoint(_vampireExitPoint, _money);
             _waitingPositions.Enqueue(vampire.transform.position);
         }
 
@@ -54,16 +79,16 @@ namespace Vampire
                 {
                     targetPosition = lastPosition;
                 }
-                
+
                 StartCoroutine(SmoothMove(currentVampire.transform, targetPosition));
-                newPositions.Enqueue(currentVampire.transform.position); 
+                newPositions.Enqueue(targetPosition);
                 lastPosition = targetPosition;
             }
 
             _waitingPositions = newPositions;
         }
 
-        private System.Collections.IEnumerator SmoothMove(Transform transformToMove, Vector3 targetPosition)
+        private IEnumerator SmoothMove(Transform transformToMove, Vector3 targetPosition)
         {
             float sqrRemainingDistance = (transformToMove.position - targetPosition).sqrMagnitude;
 
@@ -75,7 +100,7 @@ namespace Vampire
                 yield return null;
             }
 
-            transformToMove.position = targetPosition; 
+            transformToMove.position = targetPosition;
         }
 
         public int GetVampireCount()

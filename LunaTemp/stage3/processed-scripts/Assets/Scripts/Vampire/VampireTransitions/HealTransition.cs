@@ -16,14 +16,12 @@ namespace Vampire.VampireTransitions
         {
             if (Vector2.Distance(transform.position, Target.transform.position) < _transitionRange)
             {
-                Target.HealBed();
                 NeedTransit = true;
             }
         }
-        
+
         public override void Enable()
         {
-
         }
     }
 }

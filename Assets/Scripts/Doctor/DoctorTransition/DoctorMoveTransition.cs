@@ -12,8 +12,8 @@ namespace Doctor.DoctorTransition
         private void Update()
         {
             Target = Doctor.Target;
-
-            if (Target != null && !Target.IsRun)
+          //  Debug.Log(Target);
+            if (Target != null && !Target.IsRun && !Target.OnPlace)
             {
                 Target.DoctorOnRun();
                 NeedTransit = true;

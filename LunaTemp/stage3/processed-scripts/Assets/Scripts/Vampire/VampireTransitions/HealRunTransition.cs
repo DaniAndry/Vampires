@@ -1,10 +1,14 @@
 ﻿using System;
-using UnityEngine;
 
 namespace Vampire.VampireTransitions
 {
     public class HealRunTransition : Transition
     {
+        private void Start()
+        {
+            Target.OnReady();
+        }
+
         private void Update()
         {
             if (Target.OnPlace && Target.IsReadyToHeal)

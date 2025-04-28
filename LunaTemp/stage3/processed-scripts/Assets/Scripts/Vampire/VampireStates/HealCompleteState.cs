@@ -14,7 +14,6 @@
         {
             _vampire.Heal();
             Target.OfReady();
-            
         }
     }
 }

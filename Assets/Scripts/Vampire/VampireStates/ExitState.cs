@@ -9,12 +9,19 @@ namespace Vampire.VampireStates
         [SerializeField] private float _rotationSpeed = 5f;
         [SerializeField] private float _targetAngleZ = 0f;
         [SerializeField] private float _moveSpeed = 2f;
-        [SerializeField] private Transform _targetTransform;
         [SerializeField] private MoneyConroller _money;
+        private Transform _targetTransform;
+        private SpriteRenderer _spriteRenderer;
+        private Vampire _vampire;
 
         private void OnEnable()
         {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+            _vampire = GetComponent<Vampire>();
             StartCoroutine(PerformExitSequence());
+            _targetTransform = _vampire.ExitPoint;
+            _money = _vampire.Money;
+            _spriteRenderer.enabled = true;
         }
 
         private IEnumerator PerformExitSequence()
@@ -46,8 +53,6 @@ namespace Vampire.VampireStates
                 transform.position = _targetTransform.position;
                 _money.AddMoney(10);
                 Destroy(gameObject);
-                
-                
             }
         }
     }

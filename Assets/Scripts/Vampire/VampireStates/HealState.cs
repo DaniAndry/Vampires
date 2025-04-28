@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Vampire.VampireStates
@@ -7,10 +6,12 @@ namespace Vampire.VampireStates
     {
         [SerializeField] private float _rotationSpeed = 5f;
         private float _targetAngleZ = -70f;
+        private SpriteRenderer spriteRenderer;
 
         private void Start()
         {
             Animator.enabled = false;
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         private void Update()
@@ -23,6 +24,7 @@ namespace Vampire.VampireStates
             {
                 transform.eulerAngles = new Vector3(currentRotation.x, currentRotation.y, _targetAngleZ);
                 Target.HealBed();
+                spriteRenderer.enabled = false;
             }
         }
     }

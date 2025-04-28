@@ -11,6 +11,7 @@ namespace Doctor.DoctorTransition
         {
             if (Vector2.Distance(transform.position, Target.transform.position) < _transitionRange)
             {
+                Debug.Log("Doctor Transition   ");
                 NeedTransit = true;
             }
         }

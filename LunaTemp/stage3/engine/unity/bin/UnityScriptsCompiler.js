@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["Bed#IsBusy#get","Bed#NeedToHeal#get","Bed#OnPlace#get","Bed#IsReadyToHeal#get","Bed#TakeABed","Bed#EmptyBed","Bed#HealBed","Bed#HealComplete","Bed#DoctorOnPlace","Bed#OnReady","Bed#OfReady","Beds#Update","BuyController#init","BuyController#Start","BuyController#BuyDoctor","BuyController#BuyBed","Doctor.Doctor#Target#get","Doctor.Doctor#IsBusy#get","Doctor.Doctor#ToHeal","Doctor.Doctor#CompleteHealing","State#Enter","State#Exit","State#GetNextState","State#ReloadTarget","State#ChangeTarget","Doctor.DoctorStateMachine#Awake","Doctor.DoctorStateMachine#Start","Doctor.DoctorStateMachine#Update","Doctor.DoctorStateMachine#Transit","Transition#TargetState#get","Transition#OnEnable","Transition#Init","Doctors#GoToHeal","Money.BuyButton#CurrentPrice#get","Money.BuyButton#init","Money.BuyButton#Initialize","Money.BuyButton#IncreasePrice","Money.BuyButton#UpdatePriceText","Money.MoneyConroller#init","Money.MoneyConroller#Start","Money.MoneyConroller#AddMoney","Money.MoneyConroller#TryToBuy","Money.MoneyConroller#RemoveMoney","Money.MoneyUI#Awake","Money.MoneyUI#UpdateText","Vampire.Vampire#Target#get","Vampire.Vampire#IsFirst#get","Vampire.Vampire#IsHealthy#get","Vampire.Vampire#Reward#get","Vampire.Vampire#init","Vampire.Vampire#Awake","Vampire.Vampire#ToFirst","Vampire.Vampire#StartToHeal","Vampire.Vampire#Heal","Vampire.Vampires#init","Vampire.Vampires#Start","Vampire.Vampires#AssignBedToFirstAvailable","Vampire.Vampires#AddVampire","Vampire.Vampires#MoveRemainingVampires","Vampire.Vampires#SmoothMove","Vampire.Vampires#GetVampireCount","Vampire.VampireStateMachine#Awake","Vampire.VampireStateMachine#Start","Vampire.VampireStateMachine#Update","Vampire.VampireStateMachine#Transit","Doctor.DoctorState.DoctorHealState#init","Doctor.DoctorState.DoctorHealState#OnEnable","Doctor.DoctorState.DoctorIdleState#init","Doctor.DoctorState.DoctorIdleState#Start","Doctor.DoctorState.DoctorMoveState#init","Doctor.DoctorState.DoctorMoveState#init","Doctor.DoctorState.DoctorMoveState#Start","Doctor.DoctorState.DoctorMoveState#Update","Doctor.DoctorTransition.DoctorHealRunTransition#Start","Doctor.DoctorTransition.DoctorHealRunTransition#Enable","Doctor.DoctorTransition.DoctorHealTransition#init","Doctor.DoctorTransition.DoctorHealTransition#Start","Doctor.DoctorTransition.DoctorHealTransition#Update","Doctor.DoctorTransition.DoctorHealTransition#Enable","Doctor.DoctorTransition.DoctorIdleTransition#Update","Doctor.DoctorTransition.DoctorIdleTransition#Enable","Doctor.DoctorTransition.DoctorMoveTransition#Enable","Doctor.DoctorTransition.DoctorMoveTransition#Update","Vampire.VampireStates.ExitState#init","Vampire.VampireStates.ExitState#OnEnable","Vampire.VampireStates.ExitState#PerformExitSequence","Vampire.VampireStates.HealCompleteState#OnEnable","Vampire.VampireStates.HealCompleteState#Heal","Vampire.VampireStates.HealRunState#OnEnable","Vampire.VampireStates.HealRunState#Rotate","Vampire.VampireStates.HealState#init","Vampire.VampireStates.HealState#Update","Vampire.VampireStates.IdleState#init","Vampire.VampireStates.IdleState#Start","Vampire.VampireStates.MoveState#init","Vampire.VampireStates.MoveState#Start","Vampire.VampireStates.MoveState#Update","Vampire.VampireTransitions.ExitTransition#Start","Vampire.VampireTransitions.ExitTransition#Exit","Vampire.VampireTransitions.ExitTransition#Enable","Vampire.VampireTransitions.HealCompleteTransition#Start","Vampire.VampireTransitions.HealCompleteTransition#Exit","Vampire.VampireTransitions.HealCompleteTransition#Enable","Vampire.VampireTransitions.HealRunTransition#Update","Vampire.VampireTransitions.HealRunTransition#Enable","Vampire.VampireTransitions.HealTransition#init","Vampire.VampireTransitions.HealTransition#Start","Vampire.VampireTransitions.HealTransition#Update","Vampire.VampireTransitions.HealTransition#Enable","Vampire.VampireTransitions.IdleTransition#Enable","Vampire.VampireTransitions.MoveTransition#Enable","Vampire.VampireTransitions.MoveTransition#Update"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["Bed#IsBusy#get","Bed#NeedToHeal#get","Bed#OnPlace#get","Bed#IsReadyToHeal#get","Bed#IsRun#get","Bed#Start","Bed#TakeABed","Bed#EmptyBed","Bed#HealBed","Bed#HealComplete","Bed#DoctorOnPlace","Bed#DoctorOnRun","Bed#OnReady","Bed#OfReady","Beds#Update","BuyController#init","BuyController#Start","BuyController#BuyDoctor","BuyController#BuyBed","Doctor.Doctor#Target#get","Doctor.Doctor#IsBusy#get","Doctor.Doctor#ToHeal","Doctor.Doctor#CompleteHealing","State#Enter","State#Exit","State#GetNextState","State#ChangeTarget","Doctor.DoctorStateMachine#Awake","Doctor.DoctorStateMachine#Start","Doctor.DoctorStateMachine#Update","Doctor.DoctorStateMachine#Transit","Transition#TargetState#get","Transition#OnEnable","Transition#Init","Doctors#GoToHeal","Money.BuyButton#CurrentPrice#get","Money.BuyButton#init","Money.BuyButton#Initialize","Money.BuyButton#IncreasePrice","Money.BuyButton#UpdatePriceText","Money.MoneyConroller#init","Money.MoneyConroller#Start","Money.MoneyConroller#AddMoney","Money.MoneyConroller#TryToBuy","Money.MoneyConroller#RemoveMoney","Money.MoneyUI#Awake","Money.MoneyUI#UpdateText","Vampire.Vampire#Target#get","Vampire.Vampire#IsFirst#get","Vampire.Vampire#IsHealthy#get","Vampire.Vampire#ExitPoint#get","Vampire.Vampire#Reward#get","Vampire.Vampire#Money#get","Vampire.Vampire#init","Vampire.Vampire#Awake","Vampire.Vampire#ToFirst","Vampire.Vampire#StartToHeal","Vampire.Vampire#Heal","Vampire.Vampire#InitPoint","Vampire.Vampires#init","Vampire.Vampires#Start","Vampire.Vampires#AssignBedToFirstAvailable","Vampire.Vampires#SpawnVampireAtEnd","Vampire.Vampires#GetLastWaitingPosition","Vampire.Vampires#AddVampire","Vampire.Vampires#MoveRemainingVampires","Vampire.Vampires#SmoothMove","Vampire.Vampires#GetVampireCount","Vampire.VampireStateMachine#Awake","Vampire.VampireStateMachine#Start","Vampire.VampireStateMachine#Update","Vampire.VampireStateMachine#Transit","Doctor.DoctorState.DoctorHealState#init","Doctor.DoctorState.DoctorHealState#Update","Doctor.DoctorState.DoctorIdleState#init","Doctor.DoctorState.DoctorIdleState#OnEnable","Doctor.DoctorState.DoctorMoveState#init","Doctor.DoctorState.DoctorMoveState#Enter","Doctor.DoctorState.DoctorMoveState#FindClosestWaypointIndex","Doctor.DoctorState.DoctorMoveState#Update","Doctor.DoctorState.DoctorMoveState#Exit","Doctor.DoctorTransition.DoctorHealRunTransition#init","Doctor.DoctorTransition.DoctorHealRunTransition#Update","Doctor.DoctorTransition.DoctorHealRunTransition#Complete","Doctor.DoctorTransition.DoctorHealRunTransition#Enable","Doctor.DoctorTransition.DoctorHealTransition#init","Doctor.DoctorTransition.DoctorHealTransition#Update","Doctor.DoctorTransition.DoctorHealTransition#Enable","Doctor.DoctorTransition.DoctorIdleTransition#Update","Doctor.DoctorTransition.DoctorIdleTransition#Enable","Doctor.DoctorTransition.DoctorMoveTransition#Enable","Doctor.DoctorTransition.DoctorMoveTransition#Update","Vampire.VampireStates.ExitState#init","Vampire.VampireStates.ExitState#OnEnable","Vampire.VampireStates.ExitState#PerformExitSequence","Vampire.VampireStates.HealCompleteState#OnEnable","Vampire.VampireStates.HealCompleteState#Heal","Vampire.VampireStates.HealRunState#OnEnable","Vampire.VampireStates.HealRunState#Rotate","Vampire.VampireStates.HealState#init","Vampire.VampireStates.HealState#Start","Vampire.VampireStates.HealState#Update","Vampire.VampireStates.IdleState#init","Vampire.VampireStates.IdleState#Start","Vampire.VampireStates.MoveState#init","Vampire.VampireStates.MoveState#Enter","Vampire.VampireStates.MoveState#FindClosestWaypointIndex","Vampire.VampireStates.MoveState#Update","Vampire.VampireTransitions.ExitTransition#Start","Vampire.VampireTransitions.ExitTransition#Exit","Vampire.VampireTransitions.ExitTransition#Enable","Vampire.VampireTransitions.HealCompleteTransition#Start","Vampire.VampireTransitions.HealCompleteTransition#Exit","Vampire.VampireTransitions.HealCompleteTransition#Enable","Vampire.VampireTransitions.HealRunTransition#Start","Vampire.VampireTransitions.HealRunTransition#Update","Vampire.VampireTransitions.HealRunTransition#Enable","Vampire.VampireTransitions.HealTransition#init","Vampire.VampireTransitions.HealTransition#Start","Vampire.VampireTransitions.HealTransition#Update","Vampire.VampireTransitions.HealTransition#Enable","Vampire.VampireTransitions.IdleTransition#Enable","Vampire.VampireTransitions.MoveTransition#Enable","Vampire.VampireTransitions.MoveTransition#Update"]' ) ); }
 /**
- * @version 1.0.9243.26705
+ * @version 1.0.9246.35605
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -11,10 +11,14 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
     Bridge.define("Bed", {
         inherits: [UnityEngine.MonoBehaviour],
         fields: {
+            _spriteNeedToHeal: null,
             _isBusy: false,
             _needToHeal: false,
             _onPlace: false,
-            _isReadyToHeal: false
+            _isReadyToHeal: false,
+            _isRun: false,
+            _sprite: null,
+            _spriteRenderer: null
         },
         props: {
             IsBusy: {
@@ -44,9 +48,25 @@ if ( TRACE ) { TRACE( "Bed#IsReadyToHeal#get", this ); }
 
                     return this._isReadyToHeal;
                 }
+            },
+            IsRun: {
+                get: function () {
+if ( TRACE ) { TRACE( "Bed#IsRun#get", this ); }
+
+                    return this._isRun;
+                }
             }
         },
         methods: {
+            /*Bed.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "Bed#Start", this ); }
+
+                this._spriteRenderer = this.GetComponent(UnityEngine.SpriteRenderer);
+                this._sprite = this._spriteRenderer.sprite;
+            },
+            /*Bed.Start end.*/
+
             /*Bed.TakeABed start.*/
             TakeABed: function () {
 if ( TRACE ) { TRACE( "Bed#TakeABed", this ); }
@@ -60,6 +80,7 @@ if ( TRACE ) { TRACE( "Bed#TakeABed", this ); }
 if ( TRACE ) { TRACE( "Bed#EmptyBed", this ); }
 
                 this._isBusy = false;
+                this._spriteRenderer.sprite = this._sprite;
             },
             /*Bed.EmptyBed end.*/
 
@@ -68,6 +89,7 @@ if ( TRACE ) { TRACE( "Bed#EmptyBed", this ); }
 if ( TRACE ) { TRACE( "Bed#HealBed", this ); }
 
                 this._needToHeal = true;
+                this._spriteRenderer.sprite = this._spriteNeedToHeal;
             },
             /*Bed.HealBed end.*/
 
@@ -76,6 +98,7 @@ if ( TRACE ) { TRACE( "Bed#HealBed", this ); }
 if ( TRACE ) { TRACE( "Bed#HealComplete", this ); }
 
                 this._isBusy = false;
+                this._onPlace = false;
             },
             /*Bed.HealComplete end.*/
 
@@ -85,8 +108,17 @@ if ( TRACE ) { TRACE( "Bed#DoctorOnPlace", this ); }
 
                 this._onPlace = true;
                 this._needToHeal = false;
+                this._isRun = false;
             },
             /*Bed.DoctorOnPlace end.*/
+
+            /*Bed.DoctorOnRun start.*/
+            DoctorOnRun: function () {
+if ( TRACE ) { TRACE( "Bed#DoctorOnRun", this ); }
+
+                this._isRun = true;
+            },
+            /*Bed.DoctorOnRun end.*/
 
             /*Bed.OnReady start.*/
             OnReady: function () {
@@ -131,9 +163,11 @@ if ( TRACE ) { TRACE( "Beds#Update", this ); }
                             this._vampires.AssignBedToFirstAvailable(bed);
                         } else if (UnityEngine.MonoBehaviour.op_Inequality(bed, null) && bed.gameObject.activeSelf && bed.NeedToHeal && bed.IsBusy && bed.IsReadyToHeal) {
                             this._doctors.GoToHeal(bed);
-
-                            UnityEngine.Debug.Log$1(bed.gameObject.name);
                         }
+
+                        // Debug.Log(bed.NeedToHeal);
+                        // Debug.Log(bed.IsBusy);
+                        // Debug.Log(bed.IsReadyToHeal);
                     }
                 } finally {
                     if (Bridge.is($t, System.IDisposable)) {
@@ -241,8 +275,8 @@ if ( TRACE ) { TRACE( "Doctor.Doctor#IsBusy#get", this ); }
             ToHeal: function (bed) {
 if ( TRACE ) { TRACE( "Doctor.Doctor#ToHeal", this ); }
 
-                this._target = bed;
                 this._isBusy = true;
+                this._target = bed;
             },
             /*Doctor.Doctor.ToHeal end.*/
 
@@ -251,6 +285,7 @@ if ( TRACE ) { TRACE( "Doctor.Doctor#ToHeal", this ); }
 if ( TRACE ) { TRACE( "Doctor.Doctor#CompleteHealing", this ); }
 
                 this._isBusy = false;
+                this._target = null;
             },
             /*Doctor.Doctor.CompleteHealing end.*/
 
@@ -258,6 +293,28 @@ if ( TRACE ) { TRACE( "Doctor.Doctor#CompleteHealing", this ); }
         }
     });
     /*Doctor.Doctor end.*/
+
+    /*Doctor.DoctorState.BedRoute start.*/
+    Bridge.define("Doctor.DoctorState.BedRoute", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            DoctorWaypoints: null,
+            VampireWaypoints: null
+        }
+    });
+    /*Doctor.DoctorState.BedRoute end.*/
+
+    /*Doctor.DoctorState.CharacterType start.*/
+    Bridge.define("Doctor.DoctorState.CharacterType", {
+        $kind: 6,
+        statics: {
+            fields: {
+                Doctor: 0,
+                Vampire: 1
+            }
+        }
+    });
+    /*Doctor.DoctorState.CharacterType end.*/
 
     /*State start.*/
     Bridge.define("State", {
@@ -276,7 +333,6 @@ if ( TRACE ) { TRACE( "State#Enter", this ); }
                 if (!this.enabled) {
                     this.Animator = animator;
                     this.Target = bed;
-
                     this.enabled = true;
 
                     $t = Bridge.getEnumerator(this._transitions);
@@ -340,14 +396,6 @@ if ( TRACE ) { TRACE( "State#GetNextState", this ); }
                 return null;
             },
             /*State.GetNextState end.*/
-
-            /*State.ReloadTarget start.*/
-            ReloadTarget: function () {
-if ( TRACE ) { TRACE( "State#ReloadTarget", this ); }
-
-                this.Target = null;
-            },
-            /*State.ReloadTarget end.*/
 
             /*State.ChangeTarget start.*/
             ChangeTarget: function (target) {
@@ -486,7 +534,7 @@ if ( TRACE ) { TRACE( "Doctors#GoToHeal", this ); }
                 try {
                     while ($t.moveNext()) {
                         var doctor = $t.Current;
-                        if (!doctor.IsBusy) {
+                        if (doctor.gameObject.activeSelf && !doctor.IsBusy) {
                             doctor.ToHeal(bed);
                         }
                     }
@@ -656,12 +704,13 @@ if ( TRACE ) { TRACE( "Money.MoneyUI#UpdateText", this ); }
         inherits: [UnityEngine.MonoBehaviour],
         fields: {
             healSprite: null,
-            ExitPoint: null,
+            _exitPoint: null,
             _reward: 0,
             _isFirst: false,
             _target: null,
             _renderer: null,
-            _isHealthy: false
+            _isHealthy: false,
+            _money: null
         },
         props: {
             Target: {
@@ -685,11 +734,25 @@ if ( TRACE ) { TRACE( "Vampire.Vampire#IsHealthy#get", this ); }
                     return this._isHealthy;
                 }
             },
+            ExitPoint: {
+                get: function () {
+if ( TRACE ) { TRACE( "Vampire.Vampire#ExitPoint#get", this ); }
+
+                    return this._exitPoint;
+                }
+            },
             Reward: {
                 get: function () {
 if ( TRACE ) { TRACE( "Vampire.Vampire#Reward#get", this ); }
 
                     return this._reward;
+                }
+            },
+            Money: {
+                get: function () {
+if ( TRACE ) { TRACE( "Vampire.Vampire#Money#get", this ); }
+
+                    return this._money;
                 }
             }
         },
@@ -734,6 +797,15 @@ if ( TRACE ) { TRACE( "Vampire.Vampire#Heal", this ); }
             },
             /*Vampire.Vampire.Heal end.*/
 
+            /*Vampire.Vampire.InitPoint start.*/
+            InitPoint: function (vampireExitPoint, money) {
+if ( TRACE ) { TRACE( "Vampire.Vampire#InitPoint", this ); }
+
+                this._exitPoint = vampireExitPoint;
+                this._money = money;
+            },
+            /*Vampire.Vampire.InitPoint end.*/
+
 
         }
     });
@@ -745,6 +817,9 @@ if ( TRACE ) { TRACE( "Vampire.Vampire#Heal", this ); }
         fields: {
             _vampires: null,
             _moveSpeed: 0,
+            _vampirePrefab: null,
+            _vampireExitPoint: null,
+            _money: null,
             _waitingPositions: null
         },
         ctors: {
@@ -781,19 +856,43 @@ if ( TRACE ) { TRACE( "Vampire.Vampires#AssignBedToFirstAvailable", this ); }
 
                 if (this._vampires.Count > 0) {
                     var firstVampire = this._vampires.getItem(0);
-                    firstVampire.ToFirst(bed);
+                    firstVampire.InitPoint(this._vampireExitPoint, this._money);
                     this._vampires.removeAt(0);
+                    firstVampire.ToFirst(bed);
 
                     this.MoveRemainingVampires();
+
+                    this.SpawnVampireAtEnd();
                 }
             },
             /*Vampire.Vampires.AssignBedToFirstAvailable end.*/
+
+            /*Vampire.Vampires.SpawnVampireAtEnd start.*/
+            SpawnVampireAtEnd: function () {
+if ( TRACE ) { TRACE( "Vampire.Vampires#SpawnVampireAtEnd", this ); }
+
+                var spawnPosition = (this._waitingPositions.Count > 0) ? this.GetLastWaitingPosition() : this.transform.position.$clone();
+
+                var newVampire = UnityEngine.Object.Instantiate$3(Vampire.Vampire, this._vampirePrefab, spawnPosition, pc.Quat.IDENTITY.clone(), this.transform);
+                this.AddVampire(newVampire);
+            },
+            /*Vampire.Vampires.SpawnVampireAtEnd end.*/
+
+            /*Vampire.Vampires.GetLastWaitingPosition start.*/
+            GetLastWaitingPosition: function () {
+if ( TRACE ) { TRACE( "Vampire.Vampires#GetLastWaitingPosition", this ); }
+
+                var positions = this._waitingPositions.ToArray();
+                return positions[((positions.length - 1) | 0)].$clone();
+            },
+            /*Vampire.Vampires.GetLastWaitingPosition end.*/
 
             /*Vampire.Vampires.AddVampire start.*/
             AddVampire: function (vampire) {
 if ( TRACE ) { TRACE( "Vampire.Vampires#AddVampire", this ); }
 
                 this._vampires.add(vampire);
+                vampire.InitPoint(this._vampireExitPoint, this._money);
                 this._waitingPositions.Enqueue(vampire.transform.position.$clone());
             },
             /*Vampire.Vampires.AddVampire end.*/
@@ -816,7 +915,7 @@ if ( TRACE ) { TRACE( "Vampire.Vampires#MoveRemainingVampires", this ); }
                     }
 
                     this.StartCoroutine$1(this.SmoothMove(currentVampire.transform, targetPosition));
-                    newPositions.Enqueue(currentVampire.transform.position.$clone());
+                    newPositions.Enqueue(targetPosition.$clone());
                     lastPosition = targetPosition.$clone();
                 }
 
@@ -977,16 +1076,16 @@ if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorHealState#init", this ); }
             }
         },
         methods: {
-            /*Doctor.DoctorState.DoctorHealState.OnEnable start.*/
-            OnEnable: function () {
-if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorHealState#OnEnable", this ); }
+            /*Doctor.DoctorState.DoctorHealState.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorHealState#Update", this ); }
 
-                //Animator.Play(StateName);
-                this.Target.DoctorOnPlace();
-                this.ReloadTarget();
-
+                if (this.Target.IsBusy && UnityEngine.MonoBehaviour.op_Inequality(this.Target, null)) {
+                    UnityEngine.Debug.Log$1("Doctor Healing");
+                    this.Target.DoctorOnPlace();
+                }
             },
-            /*Doctor.DoctorState.DoctorHealState.OnEnable end.*/
+            /*Doctor.DoctorState.DoctorHealState.Update end.*/
 
 
         }
@@ -1009,13 +1108,11 @@ if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorIdleState#init", this ); }
             }
         },
         methods: {
-            /*Doctor.DoctorState.DoctorIdleState.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorIdleState#Start", this ); }
-
-                //Animator.Play(StateName);
-            },
-            /*Doctor.DoctorState.DoctorIdleState.Start end.*/
+            /*Doctor.DoctorState.DoctorIdleState.OnEnable start.*/
+            OnEnable: function () {
+if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorIdleState#OnEnable", this ); }
+ },
+            /*Doctor.DoctorState.DoctorIdleState.OnEnable end.*/
 
 
         }
@@ -1025,46 +1122,113 @@ if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorIdleState#Start", this ); }
     /*Doctor.DoctorState.DoctorMoveState start.*/
     Bridge.define("Doctor.DoctorState.DoctorMoveState", {
         inherits: [State],
-        statics: {
-            fields: {
-                StateName: null
-            },
-            ctors: {
-                init: function () {
-if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#init", this ); }
-
-                    this.StateName = "Move";
-                }
-            }
-        },
         fields: {
-            _speed: 0
+            _speed: 0,
+            _reachDistance: 0,
+            _route: null,
+            _currentWaypointIndex: 0,
+            _characterType: 0,
+            _firstEnter: false
         },
         ctors: {
             init: function () {
 if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#init", this ); }
 
                 this._speed = 2.0;
+                this._reachDistance = 0.1;
+                this._characterType = Doctor.DoctorState.CharacterType.Doctor;
+                this._firstEnter = true;
             }
         },
         methods: {
-            /*Doctor.DoctorState.DoctorMoveState.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#Start", this ); }
+            /*Doctor.DoctorState.DoctorMoveState.Enter start.*/
+            Enter: function (animator, bed) {
+if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#Enter", this ); }
 
-                // Animator.Play(StateName);
+                State.prototype.Enter.call(this, animator, bed);
+
+                var bedRoute = bed.GetComponent(Doctor.DoctorState.BedRoute);
+                var route = null;
+
+                if (this._characterType === Doctor.DoctorState.CharacterType.Doctor) {
+                    route = bedRoute.DoctorWaypoints;
+                } else {
+                    if (this._characterType === Doctor.DoctorState.CharacterType.Vampire) {
+                        route = bedRoute.VampireWaypoints;
+                    }
+                }
+
+                this._route = route;
+
+
+                if (this._firstEnter && this._route != null && this._route.length > 0) {
+                    this._currentWaypointIndex = this.FindClosestWaypointIndex(this._route, UnityEngine.Vector2.FromVector3(this.transform.position));
+                    this._firstEnter = false;
+                } else if (this._route == null || this._route.length === 0) {
+                    this.enabled = false;
+                    return;
+                }
+
+                // Animator.Play("WalkSimple");
             },
-            /*Doctor.DoctorState.DoctorMoveState.Start end.*/
+            /*Doctor.DoctorState.DoctorMoveState.Enter end.*/
+
+            /*Doctor.DoctorState.DoctorMoveState.FindClosestWaypointIndex start.*/
+            FindClosestWaypointIndex: function (waypoints, currentPosition) {
+if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#FindClosestWaypointIndex", this ); }
+
+                var minDistance = 3.40282347E+38;
+                var closestIndex = 0;
+                for (var i = 0; i < waypoints.length; i = (i + 1) | 0) {
+                    var dist = currentPosition.$clone().sub( UnityEngine.Vector2.FromVector3(waypoints[i].position) ).length();
+                    if (dist < minDistance) {
+                        minDistance = dist;
+                        closestIndex = i;
+                    }
+                }
+                return closestIndex;
+            },
+            /*Doctor.DoctorState.DoctorMoveState.FindClosestWaypointIndex end.*/
 
             /*Doctor.DoctorState.DoctorMoveState.Update start.*/
             Update: function () {
 if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#Update", this ); }
 
-                if (UnityEngine.MonoBehaviour.op_Inequality(this.Target, null)) {
-                    this.transform.position = UnityEngine.Vector3.FromVector2(pc.Vec2.moveTowards( UnityEngine.Vector2.FromVector3(this.transform.position), UnityEngine.Vector2.FromVector3(this.Target.transform.position), this._speed * UnityEngine.Time.deltaTime ));
+                if (this._route != null) {
+                    var targetPosition = new UnityEngine.Vector3();
+
+                    if (this._currentWaypointIndex < this._route.length) {
+                        targetPosition = this._route[this._currentWaypointIndex].position.$clone();
+                    } else if (UnityEngine.MonoBehaviour.op_Inequality(this.Target, null)) {
+                        targetPosition = this.Target.transform.position.$clone();
+                    } else {
+                        this.enabled = false;
+                        return;
+                    }
+
+                    this.transform.position = UnityEngine.Vector3.FromVector2(pc.Vec2.moveTowards( UnityEngine.Vector2.FromVector3(this.transform.position), UnityEngine.Vector2.FromVector3(targetPosition), this._speed * UnityEngine.Time.deltaTime ));
+
+                    if (UnityEngine.Vector2.FromVector3(this.transform.position.$clone()).sub( UnityEngine.Vector2.FromVector3(targetPosition) ).length() < this._reachDistance) {
+                        this._currentWaypointIndex = (this._currentWaypointIndex + 1) | 0;
+                        if (this._currentWaypointIndex >= this._route.length && UnityEngine.MonoBehaviour.op_Equality(this.Target, null)) {
+                            this._route = null;
+                            this.enabled = false;
+                            this._firstEnter = true;
+                        }
+                    }
                 }
             },
             /*Doctor.DoctorState.DoctorMoveState.Update end.*/
+
+            /*Doctor.DoctorState.DoctorMoveState.Exit start.*/
+            Exit: function () {
+if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#Exit", this ); }
+
+                State.prototype.Exit.call(this);
+                // Можно сбросить флаг здесь, если логика требует пересчета ближайшей точки при следующем входе
+                // _firstEnter = true;
+            },
+            /*Doctor.DoctorState.DoctorMoveState.Exit end.*/
 
 
         }
@@ -1074,15 +1238,67 @@ if ( TRACE ) { TRACE( "Doctor.DoctorState.DoctorMoveState#Update", this ); }
     /*Doctor.DoctorTransition.DoctorHealRunTransition start.*/
     Bridge.define("Doctor.DoctorTransition.DoctorHealRunTransition", {
         inherits: [Transition],
-        methods: {
-            /*Doctor.DoctorTransition.DoctorHealRunTransition.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorHealRunTransition#Start", this ); }
+        fields: {
+            _isRunning: false
+        },
+        ctors: {
+            init: function () {
+if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorHealRunTransition#init", this ); }
 
-                this.Doctor.CompleteHealing();
-                this.NeedTransit = true;
+                this._isRunning = false;
+            }
+        },
+        methods: {
+            /*Doctor.DoctorTransition.DoctorHealRunTransition.Update start.*/
+            Update: function () {
+if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorHealRunTransition#Update", this ); }
+
+                if (!this._isRunning && this.Doctor.IsBusy && this.Target.OnPlace) {
+                    this.StartCoroutine$1(this.Complete());
+                }
             },
-            /*Doctor.DoctorTransition.DoctorHealRunTransition.Start end.*/
+            /*Doctor.DoctorTransition.DoctorHealRunTransition.Update end.*/
+
+            /*Doctor.DoctorTransition.DoctorHealRunTransition.Complete start.*/
+            Complete: function () {
+if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorHealRunTransition#Complete", this ); }
+
+                var $step = 0,
+                    $jumpFromFinally,
+                    $returnValue,
+                    $async_e;
+
+                var $enumerator = new Bridge.GeneratorEnumerator(Bridge.fn.bind(this, function () {
+                    try {
+                        for (;;) {
+                            switch ($step) {
+                                case 0: {
+                                    this._isRunning = true;
+
+                                        $enumerator.current = new UnityEngine.WaitForSeconds(1.0);
+                                        $step = 1;
+                                        return true;
+                                }
+                                case 1: {
+                                    this.Doctor.CompleteHealing();
+                                        this.NeedTransit = true;
+
+                                        this._isRunning = false;
+
+                                }
+                                default: {
+                                    return false;
+                                }
+                            }
+                        }
+                    } catch($async_e1) {
+                        $async_e = System.Exception.create($async_e1);
+                        throw $async_e;
+                    }
+                }));
+                return $enumerator;
+            },
+            /*Doctor.DoctorTransition.DoctorHealRunTransition.Complete end.*/
 
             /*Doctor.DoctorTransition.DoctorHealRunTransition.Enable start.*/
             Enable: function () {
@@ -1113,19 +1329,12 @@ if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorHealTransition#init", this 
             }
         },
         methods: {
-            /*Doctor.DoctorTransition.DoctorHealTransition.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorHealTransition#Start", this ); }
-
-                this._transitionRange += UnityEngine.Random.Range$1(-this._rangeSpread, this._rangeSpread);
-            },
-            /*Doctor.DoctorTransition.DoctorHealTransition.Start end.*/
-
             /*Doctor.DoctorTransition.DoctorHealTransition.Update start.*/
             Update: function () {
 if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorHealTransition#Update", this ); }
 
                 if (UnityEngine.Vector2.FromVector3(this.transform.position.$clone()).sub( UnityEngine.Vector2.FromVector3(this.Target.transform.position) ).length() < this._transitionRange) {
+                    UnityEngine.Debug.Log$1("Doctor Transition   ");
                     this.NeedTransit = true;
                 }
             },
@@ -1188,7 +1397,9 @@ if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorMoveTransition#Enable", thi
 if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorMoveTransition#Update", this ); }
 
                 this.Target = this.Doctor.Target;
-                if (UnityEngine.MonoBehaviour.op_Inequality(this.Target, null)) {
+                //  Debug.Log(Target);
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.Target, null) && !this.Target.IsRun && !this.Target.OnPlace) {
+                    this.Target.DoctorOnRun();
                     this.NeedTransit = true;
                 }
             },
@@ -1206,8 +1417,10 @@ if ( TRACE ) { TRACE( "Doctor.DoctorTransition.DoctorMoveTransition#Update", thi
             _rotationSpeed: 0,
             _targetAngleZ: 0,
             _moveSpeed: 0,
+            _money: null,
             _targetTransform: null,
-            _money: null
+            _spriteRenderer: null,
+            _vampire: null
         },
         ctors: {
             init: function () {
@@ -1223,7 +1436,12 @@ if ( TRACE ) { TRACE( "Vampire.VampireStates.ExitState#init", this ); }
             OnEnable: function () {
 if ( TRACE ) { TRACE( "Vampire.VampireStates.ExitState#OnEnable", this ); }
 
+                this._spriteRenderer = this.GetComponent(UnityEngine.SpriteRenderer);
+                this._vampire = this.GetComponent(Vampire.Vampire);
                 this.StartCoroutine$1(this.PerformExitSequence());
+                this._targetTransform = this._vampire.ExitPoint;
+                this._money = this._vampire.Money;
+                this._spriteRenderer.enabled = true;
             },
             /*Vampire.VampireStates.ExitState.OnEnable end.*/
 
@@ -1278,35 +1496,42 @@ if ( TRACE ) { TRACE( "Vampire.VampireStates.ExitState#PerformExitSequence", thi
                                             $step = 5;
                                             continue;
                                         } 
-                                        $step = 9;
+                                        $step = 10;
                                         continue;
                                 }
                                 case 5: {
-                                    if ( UnityEngine.Vector2.FromVector3(this.transform.position.$clone()).sub( UnityEngine.Vector2.FromVector3(this._targetTransform.position) ).length() > 0.1 ) {
-                                            $step = 6;
-                                            continue;
-                                        } 
-                                        $step = 8;
-                                        continue;
-                                }
-                                case 6: {
-                                    this.transform.position = UnityEngine.Vector3.FromVector2(pc.Vec2.moveTowards( UnityEngine.Vector2.FromVector3(this.transform.position), UnityEngine.Vector2.FromVector3(this._targetTransform.position), this._moveSpeed * UnityEngine.Time.deltaTime ));
-                                        $enumerator.current = null;
-                                        $step = 7;
-                                        return true;
-                                }
-                                case 7: {
-                                    
-                                        $step = 5;
-                                        continue;
-                                }
-                                case 8: {
-                                    this.transform.position = this._targetTransform.position.$clone();
-                                        this._money.AddMoney(10);
-                                    $step = 9;
+                                    this.Animator.enabled = true;
+                                        this.Animator.Play$2("Walk");
+                                    $step = 6;
                                     continue;
                                 }
+                                case 6: {
+                                    if ( UnityEngine.Vector2.FromVector3(this.transform.position.$clone()).sub( UnityEngine.Vector2.FromVector3(this._targetTransform.position) ).length() > 0.1 ) {
+                                            $step = 7;
+                                            continue;
+                                        } 
+                                        $step = 9;
+                                        continue;
+                                }
+                                case 7: {
+                                    this.transform.position = UnityEngine.Vector3.FromVector2(pc.Vec2.moveTowards( UnityEngine.Vector2.FromVector3(this.transform.position), UnityEngine.Vector2.FromVector3(this._targetTransform.position), this._moveSpeed * UnityEngine.Time.deltaTime ));
+                                        $enumerator.current = null;
+                                        $step = 8;
+                                        return true;
+                                }
+                                case 8: {
+                                    
+                                        $step = 6;
+                                        continue;
+                                }
                                 case 9: {
+                                    this.transform.position = this._targetTransform.position.$clone();
+                                        this._money.AddMoney(10);
+                                        UnityEngine.MonoBehaviour.Destroy(this.gameObject);
+                                    $step = 10;
+                                    continue;
+                                }
+                                case 10: {
 
                                 }
                                 default: {
@@ -1350,7 +1575,6 @@ if ( TRACE ) { TRACE( "Vampire.VampireStates.HealCompleteState#Heal", this ); }
 
                 this._vampire.Heal();
                 this.Target.OfReady();
-
             },
             /*Vampire.VampireStates.HealCompleteState.Heal end.*/
 
@@ -1393,7 +1617,8 @@ if ( TRACE ) { TRACE( "Vampire.VampireStates.HealRunState#Rotate", this ); }
         inherits: [State],
         fields: {
             _rotationSpeed: 0,
-            _targetAngleZ: 0
+            _targetAngleZ: 0,
+            spriteRenderer: null
         },
         ctors: {
             init: function () {
@@ -1404,6 +1629,15 @@ if ( TRACE ) { TRACE( "Vampire.VampireStates.HealState#init", this ); }
             }
         },
         methods: {
+            /*Vampire.VampireStates.HealState.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "Vampire.VampireStates.HealState#Start", this ); }
+
+                this.Animator.enabled = false;
+                this.spriteRenderer = this.GetComponent(UnityEngine.SpriteRenderer);
+            },
+            /*Vampire.VampireStates.HealState.Start end.*/
+
             /*Vampire.VampireStates.HealState.Update start.*/
             Update: function () {
 if ( TRACE ) { TRACE( "Vampire.VampireStates.HealState#Update", this ); }
@@ -1412,10 +1646,10 @@ if ( TRACE ) { TRACE( "Vampire.VampireStates.HealState#Update", this ); }
                 var newAngleZ = UnityEngine.Mathf.LerpAngle(currentRotation.z, this._targetAngleZ, this._rotationSpeed * UnityEngine.Time.deltaTime);
                 this.transform.eulerAngles = new pc.Vec3( currentRotation.x, currentRotation.y, newAngleZ );
 
-                if (Math.abs(UnityEngine.Mathf.DeltaAngle(currentRotation.z, this._targetAngleZ)) < 0.1) {
+                if (Math.abs(UnityEngine.Mathf.DeltaAngle(currentRotation.z, this._targetAngleZ)) < 0.2) {
                     this.transform.eulerAngles = new pc.Vec3( currentRotation.x, currentRotation.y, this._targetAngleZ );
-                    this.Target.OnReady();
-                } else {
+                    this.Target.HealBed();
+                    this.spriteRenderer.enabled = false;
                 }
             },
             /*Vampire.VampireStates.HealState.Update end.*/
@@ -1458,31 +1692,99 @@ if ( TRACE ) { TRACE( "Vampire.VampireStates.IdleState#Start", this ); }
     Bridge.define("Vampire.VampireStates.MoveState", {
         inherits: [State],
         fields: {
-            _speed: 0
+            _speed: 0,
+            _reachDistance: 0,
+            _route: null,
+            _currentWaypointIndex: 0,
+            _characterType: 0,
+            _firstEnter: false
         },
         ctors: {
             init: function () {
 if ( TRACE ) { TRACE( "Vampire.VampireStates.MoveState#init", this ); }
 
                 this._speed = 2.0;
+                this._reachDistance = 0.1;
+                this._characterType = Doctor.DoctorState.CharacterType.Vampire;
+                this._firstEnter = true;
             }
         },
         methods: {
-            /*Vampire.VampireStates.MoveState.Start start.*/
-            Start: function () {
-if ( TRACE ) { TRACE( "Vampire.VampireStates.MoveState#Start", this ); }
+            /*Vampire.VampireStates.MoveState.Enter start.*/
+            Enter: function (animator, bed) {
+if ( TRACE ) { TRACE( "Vampire.VampireStates.MoveState#Enter", this ); }
 
-                this.Animator.Play$2("WalkSimple");
+                State.prototype.Enter.call(this, animator, bed);
+
+                var bedRoute = bed.GetComponent(Doctor.DoctorState.BedRoute);
+                var route = null;
+
+                if (this._characterType === Doctor.DoctorState.CharacterType.Doctor) {
+                    route = bedRoute.DoctorWaypoints;
+                } else {
+                    if (this._characterType === Doctor.DoctorState.CharacterType.Vampire) {
+                        route = bedRoute.VampireWaypoints;
+                    }
+                }
+
+                this._route = route;
+
+
+                if (this._firstEnter && this._route != null && this._route.length > 0) {
+                    this._currentWaypointIndex = this.FindClosestWaypointIndex(this._route, UnityEngine.Vector2.FromVector3(this.transform.position));
+                    this._firstEnter = false;
+                } else if (this._route == null || this._route.length === 0) {
+                    this.enabled = false;
+                    return;
+                }
+
             },
-            /*Vampire.VampireStates.MoveState.Start end.*/
+            /*Vampire.VampireStates.MoveState.Enter end.*/
+
+            /*Vampire.VampireStates.MoveState.FindClosestWaypointIndex start.*/
+            FindClosestWaypointIndex: function (waypoints, currentPosition) {
+if ( TRACE ) { TRACE( "Vampire.VampireStates.MoveState#FindClosestWaypointIndex", this ); }
+
+                var minDistance = 3.40282347E+38;
+                var closestIndex = 0;
+                for (var i = 0; i < waypoints.length; i = (i + 1) | 0) {
+                    var dist = currentPosition.$clone().sub( UnityEngine.Vector2.FromVector3(waypoints[i].position) ).length();
+                    if (dist < minDistance) {
+                        minDistance = dist;
+                        closestIndex = i;
+                    }
+                }
+
+                return closestIndex;
+            },
+            /*Vampire.VampireStates.MoveState.FindClosestWaypointIndex end.*/
 
             /*Vampire.VampireStates.MoveState.Update start.*/
             Update: function () {
 if ( TRACE ) { TRACE( "Vampire.VampireStates.MoveState#Update", this ); }
 
-                if (UnityEngine.MonoBehaviour.op_Inequality(this.Target, null)) {
-                    this.transform.position = UnityEngine.Vector3.FromVector2(pc.Vec2.moveTowards( UnityEngine.Vector2.FromVector3(this.transform.position), UnityEngine.Vector2.FromVector3(this.Target.transform.position), this._speed * UnityEngine.Time.deltaTime ));
+                if (this._route != null) {
+                    var targetPosition = new UnityEngine.Vector3();
 
+                    if (this._currentWaypointIndex < this._route.length) {
+                        targetPosition = this._route[this._currentWaypointIndex].position.$clone();
+                    } else if (UnityEngine.MonoBehaviour.op_Inequality(this.Target, null)) {
+                        targetPosition = this.Target.transform.position.$clone();
+                    } else {
+                        this.enabled = false;
+                        return;
+                    }
+
+                    this.transform.position = UnityEngine.Vector3.FromVector2(pc.Vec2.moveTowards( UnityEngine.Vector2.FromVector3(this.transform.position), UnityEngine.Vector2.FromVector3(targetPosition), this._speed * UnityEngine.Time.deltaTime ));
+
+                    if (UnityEngine.Vector2.FromVector3(this.transform.position.$clone()).sub( UnityEngine.Vector2.FromVector3(targetPosition) ).length() < this._reachDistance) {
+                        this._currentWaypointIndex = (this._currentWaypointIndex + 1) | 0;
+                        if (this._currentWaypointIndex >= this._route.length && UnityEngine.MonoBehaviour.op_Equality(this.Target, null)) {
+                            this._route = null;
+                            this.enabled = false;
+                            this._firstEnter = true;
+                        }
+                    }
                 }
             },
             /*Vampire.VampireStates.MoveState.Update end.*/
@@ -1514,9 +1816,9 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.ExitTransition#Start", this );
             Exit: function () {
 if ( TRACE ) { TRACE( "Vampire.VampireTransitions.ExitTransition#Exit", this ); }
 
-                this.NeedTransit = true;
                 this.Target.EmptyBed();
                 this.Target.HealComplete();
+                this.NeedTransit = true;
             },
             /*Vampire.VampireTransitions.ExitTransition.Exit end.*/
 
@@ -1550,7 +1852,6 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealCompleteTransition#Start",
 if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealCompleteTransition#Exit", this ); }
 
                 this.NeedTransit = true;
-                UnityEngine.Debug.Log(Bridge.box(this.Target.IsBusy, System.Boolean, System.Boolean.toString));
             },
             /*Vampire.VampireTransitions.HealCompleteTransition.Exit end.*/
 
@@ -1571,6 +1872,14 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealCompleteTransition#Enable"
     Bridge.define("Vampire.VampireTransitions.HealRunTransition", {
         inherits: [Transition],
         methods: {
+            /*Vampire.VampireTransitions.HealRunTransition.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealRunTransition#Start", this ); }
+
+                this.Target.OnReady();
+            },
+            /*Vampire.VampireTransitions.HealRunTransition.Start end.*/
+
             /*Vampire.VampireTransitions.HealRunTransition.Update start.*/
             Update: function () {
 if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealRunTransition#Update", this ); }
@@ -1623,7 +1932,6 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealTransition#Start", this );
 if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealTransition#Update", this ); }
 
                 if (UnityEngine.Vector2.FromVector3(this.transform.position.$clone()).sub( UnityEngine.Vector2.FromVector3(this.Target.transform.position) ).length() < this._transitionRange) {
-                    this.Target.HealBed();
                     this.NeedTransit = true;
                 }
             },
@@ -1632,9 +1940,7 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealTransition#Update", this )
             /*Vampire.VampireTransitions.HealTransition.Enable start.*/
             Enable: function () {
 if ( TRACE ) { TRACE( "Vampire.VampireTransitions.HealTransition#Enable", this ); }
-
-
-            },
+ },
             /*Vampire.VampireTransitions.HealTransition.Enable end.*/
 
 
@@ -1688,30 +1994,30 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.MoveTransition#Update", this )
 
     if ( MODULE_reflection ) {
     var $m = Bridge.setMetadata,
-        $n = ["System","System.Collections.Generic","Vampire","Money","UnityEngine","Doctor","System.Collections","UnityEngine.UI","TMPro"];
+        $n = ["System","UnityEngine","System.Collections.Generic","Vampire","Money","Doctor","System.Collections","Doctor.DoctorState","UnityEngine.UI","TMPro"];
 
     /*Bed start.*/
-    $m("Bed", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"DoctorOnPlace","t":8,"sn":"DoctorOnPlace","rt":$n[0].Void},{"a":2,"n":"EmptyBed","t":8,"sn":"EmptyBed","rt":$n[0].Void},{"a":2,"n":"HealBed","t":8,"sn":"HealBed","rt":$n[0].Void},{"a":2,"n":"HealComplete","t":8,"sn":"HealComplete","rt":$n[0].Void},{"a":2,"n":"OfReady","t":8,"sn":"OfReady","rt":$n[0].Void},{"a":2,"n":"OnReady","t":8,"sn":"OnReady","rt":$n[0].Void},{"a":2,"n":"TakeABed","t":8,"sn":"TakeABed","rt":$n[0].Void},{"a":2,"n":"IsBusy","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsBusy","t":8,"rt":$n[0].Boolean,"fg":"IsBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsBusy"},{"a":2,"n":"IsReadyToHeal","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsReadyToHeal","t":8,"rt":$n[0].Boolean,"fg":"IsReadyToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsReadyToHeal"},{"a":2,"n":"NeedToHeal","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_NeedToHeal","t":8,"rt":$n[0].Boolean,"fg":"NeedToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"NeedToHeal"},{"a":2,"n":"OnPlace","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_OnPlace","t":8,"rt":$n[0].Boolean,"fg":"OnPlace","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"OnPlace"},{"a":1,"n":"_isBusy","t":4,"rt":$n[0].Boolean,"sn":"_isBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isReadyToHeal","t":4,"rt":$n[0].Boolean,"sn":"_isReadyToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_needToHeal","t":4,"rt":$n[0].Boolean,"sn":"_needToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_onPlace","t":4,"rt":$n[0].Boolean,"sn":"_onPlace","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
+    $m("Bed", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"DoctorOnPlace","t":8,"sn":"DoctorOnPlace","rt":$n[0].Void},{"a":2,"n":"DoctorOnRun","t":8,"sn":"DoctorOnRun","rt":$n[0].Void},{"a":2,"n":"EmptyBed","t":8,"sn":"EmptyBed","rt":$n[0].Void},{"a":2,"n":"HealBed","t":8,"sn":"HealBed","rt":$n[0].Void},{"a":2,"n":"HealComplete","t":8,"sn":"HealComplete","rt":$n[0].Void},{"a":2,"n":"OfReady","t":8,"sn":"OfReady","rt":$n[0].Void},{"a":2,"n":"OnReady","t":8,"sn":"OnReady","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"TakeABed","t":8,"sn":"TakeABed","rt":$n[0].Void},{"a":2,"n":"IsBusy","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsBusy","t":8,"rt":$n[0].Boolean,"fg":"IsBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsBusy"},{"a":2,"n":"IsReadyToHeal","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsReadyToHeal","t":8,"rt":$n[0].Boolean,"fg":"IsReadyToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsReadyToHeal"},{"a":2,"n":"IsRun","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsRun","t":8,"rt":$n[0].Boolean,"fg":"IsRun","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsRun"},{"a":2,"n":"NeedToHeal","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_NeedToHeal","t":8,"rt":$n[0].Boolean,"fg":"NeedToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"NeedToHeal"},{"a":2,"n":"OnPlace","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_OnPlace","t":8,"rt":$n[0].Boolean,"fg":"OnPlace","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"OnPlace"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_isBusy","t":4,"rt":$n[0].Boolean,"sn":"_isBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_isReadyToHeal","t":4,"rt":$n[0].Boolean,"sn":"_isReadyToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_isRun","t":4,"rt":$n[0].Boolean,"sn":"_isRun","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_needToHeal","t":4,"rt":$n[0].Boolean,"sn":"_needToHeal","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_onPlace","t":4,"rt":$n[0].Boolean,"sn":"_onPlace","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_sprite","t":4,"rt":$n[1].Sprite,"sn":"_sprite"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spriteNeedToHeal","t":4,"rt":$n[1].Sprite,"sn":"_spriteNeedToHeal"},{"a":1,"n":"_spriteRenderer","t":4,"rt":$n[1].SpriteRenderer,"sn":"_spriteRenderer"}]}; }, $n);
     /*Bed end.*/
 
     /*Beds start.*/
-    $m("Beds", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_beds","t":4,"rt":$n[1].List$1(Bed),"sn":"_beds"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctors","t":4,"rt":Doctors,"sn":"_doctors"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_vampires","t":4,"rt":$n[2].Vampires,"sn":"_vampires"}]}; }, $n);
+    $m("Beds", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_beds","t":4,"rt":$n[2].List$1(Bed),"sn":"_beds"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctors","t":4,"rt":Doctors,"sn":"_doctors"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_vampires","t":4,"rt":$n[3].Vampires,"sn":"_vampires"}]}; }, $n);
     /*Beds end.*/
 
     /*Doctors start.*/
-    $m("Doctors", function () { return {"att":1048576,"a":4,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"GoToHeal","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"GoToHeal","rt":$n[0].Void,"p":[Bed]},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctors","t":4,"rt":$n[1].List$1(Doctor.Doctor),"sn":"_doctors"}]}; }, $n);
+    $m("Doctors", function () { return {"att":1048576,"a":4,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"GoToHeal","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"GoToHeal","rt":$n[0].Void,"p":[Bed]},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctors","t":4,"rt":$n[2].List$1(Doctor.Doctor),"sn":"_doctors"}]}; }, $n);
     /*Doctors end.*/
 
     /*BuyController start.*/
-    $m("BuyController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"BuyBed","t":8,"sn":"BuyBed","rt":$n[0].Void},{"a":1,"n":"BuyDoctor","t":8,"sn":"BuyDoctor","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_bedButton","t":4,"rt":$n[3].BuyButton,"sn":"_bedButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_beds","t":4,"rt":$n[1].List$1(UnityEngine.GameObject),"sn":"_beds"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctorButton","t":4,"rt":$n[3].BuyButton,"sn":"_doctorButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctors","t":4,"rt":$n[1].List$1(UnityEngine.GameObject),"sn":"_doctors"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_money","t":4,"rt":$n[3].MoneyConroller,"sn":"_money"},{"a":1,"n":"bedIndex","t":4,"rt":$n[0].Int32,"sn":"bedIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"doctorIndex","t":4,"rt":$n[0].Int32,"sn":"doctorIndex","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
+    $m("BuyController", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"BuyBed","t":8,"sn":"BuyBed","rt":$n[0].Void},{"a":1,"n":"BuyDoctor","t":8,"sn":"BuyDoctor","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_bedButton","t":4,"rt":$n[4].BuyButton,"sn":"_bedButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_beds","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"_beds"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctorButton","t":4,"rt":$n[4].BuyButton,"sn":"_doctorButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_doctors","t":4,"rt":$n[2].List$1(UnityEngine.GameObject),"sn":"_doctors"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_money","t":4,"rt":$n[4].MoneyConroller,"sn":"_money"},{"a":1,"n":"bedIndex","t":4,"rt":$n[0].Int32,"sn":"bedIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"doctorIndex","t":4,"rt":$n[0].Int32,"sn":"doctorIndex","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
     /*BuyController end.*/
 
     /*State start.*/
-    $m("State", function () { return {"att":1048705,"a":2,"m":[{"a":3,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"ChangeTarget","t":8,"pi":[{"n":"target","pt":Bed,"ps":0}],"sn":"ChangeTarget","rt":$n[0].Void,"p":[Bed]},{"a":2,"n":"Enter","t":8,"pi":[{"n":"animator","pt":$n[4].Animator,"ps":0},{"n":"bed","pt":Bed,"ps":1}],"sn":"Enter","rt":$n[0].Void,"p":[$n[4].Animator,Bed]},{"a":2,"n":"Exit","t":8,"sn":"Exit","rt":$n[0].Void},{"a":2,"n":"GetNextState","t":8,"sn":"GetNextState","rt":State},{"a":2,"n":"ReloadTarget","t":8,"sn":"ReloadTarget","rt":$n[0].Void},{"a":3,"n":"Animator","t":16,"rt":$n[4].Animator,"g":{"a":3,"n":"get_Animator","t":8,"rt":$n[4].Animator,"fg":"Animator"},"s":{"a":1,"n":"set_Animator","t":8,"p":[$n[4].Animator],"rt":$n[0].Void,"fs":"Animator"},"fn":"Animator"},{"a":3,"n":"Target","t":16,"rt":Bed,"g":{"a":3,"n":"get_Target","t":8,"rt":Bed,"fg":"Target"},"s":{"a":1,"n":"set_Target","t":8,"p":[Bed],"rt":$n[0].Void,"fs":"Target"},"fn":"Target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_transitions","t":4,"rt":$n[1].List$1(Transition),"sn":"_transitions"},{"a":1,"backing":true,"n":"<Animator>k__BackingField","t":4,"rt":$n[4].Animator,"sn":"Animator"},{"a":1,"backing":true,"n":"<Target>k__BackingField","t":4,"rt":Bed,"sn":"Target"}]}; }, $n);
+    $m("State", function () { return {"att":1048705,"a":2,"m":[{"a":3,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"ChangeTarget","t":8,"pi":[{"n":"target","pt":Bed,"ps":0}],"sn":"ChangeTarget","rt":$n[0].Void,"p":[Bed]},{"v":true,"a":2,"n":"Enter","t":8,"pi":[{"n":"animator","pt":$n[1].Animator,"ps":0},{"n":"bed","pt":Bed,"ps":1}],"sn":"Enter","rt":$n[0].Void,"p":[$n[1].Animator,Bed]},{"v":true,"a":2,"n":"Exit","t":8,"sn":"Exit","rt":$n[0].Void},{"a":2,"n":"GetNextState","t":8,"sn":"GetNextState","rt":State},{"a":3,"n":"Animator","t":16,"rt":$n[1].Animator,"g":{"a":3,"n":"get_Animator","t":8,"rt":$n[1].Animator,"fg":"Animator"},"s":{"a":1,"n":"set_Animator","t":8,"p":[$n[1].Animator],"rt":$n[0].Void,"fs":"Animator"},"fn":"Animator"},{"a":3,"n":"Target","t":16,"rt":Bed,"g":{"a":3,"n":"get_Target","t":8,"rt":Bed,"fg":"Target"},"s":{"a":1,"n":"set_Target","t":8,"p":[Bed],"rt":$n[0].Void,"fs":"Target"},"fn":"Target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_transitions","t":4,"rt":$n[2].List$1(Transition),"sn":"_transitions"},{"a":1,"backing":true,"n":"<Animator>k__BackingField","t":4,"rt":$n[1].Animator,"sn":"Animator"},{"a":1,"backing":true,"n":"<Target>k__BackingField","t":4,"rt":Bed,"sn":"Target"}]}; }, $n);
     /*State end.*/
 
     /*Transition start.*/
-    $m("Transition", function () { return {"att":1048705,"a":2,"m":[{"a":3,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ab":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":2,"n":"Init","t":8,"pi":[{"n":"target","pt":Bed,"ps":0}],"sn":"Init","rt":$n[0].Void,"p":[Bed]},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":2,"n":"NeedTransit","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_NeedTransit","t":8,"rt":$n[0].Boolean,"fg":"NeedTransit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":3,"n":"set_NeedTransit","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"NeedTransit"},"fn":"NeedTransit"},{"a":2,"n":"TargetState","t":16,"rt":State,"g":{"a":2,"n":"get_TargetState","t":8,"rt":State,"fg":"TargetState"},"fn":"TargetState"},{"a":3,"n":"Doctor","t":4,"rt":$n[5].Doctor,"sn":"Doctor"},{"a":3,"n":"Target","t":4,"rt":Bed,"sn":"Target"},{"a":3,"n":"Vampire","t":4,"rt":$n[2].Vampire,"sn":"Vampire"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_targetState","t":4,"rt":State,"sn":"_targetState"},{"a":1,"backing":true,"n":"<NeedTransit>k__BackingField","t":4,"rt":$n[0].Boolean,"sn":"NeedTransit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
+    $m("Transition", function () { return {"att":1048705,"a":2,"m":[{"a":3,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ab":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":2,"n":"Init","t":8,"pi":[{"n":"target","pt":Bed,"ps":0}],"sn":"Init","rt":$n[0].Void,"p":[Bed]},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":2,"n":"NeedTransit","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_NeedTransit","t":8,"rt":$n[0].Boolean,"fg":"NeedTransit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"s":{"a":3,"n":"set_NeedTransit","t":8,"p":[$n[0].Boolean],"rt":$n[0].Void,"fs":"NeedTransit"},"fn":"NeedTransit"},{"a":2,"n":"TargetState","t":16,"rt":State,"g":{"a":2,"n":"get_TargetState","t":8,"rt":State,"fg":"TargetState"},"fn":"TargetState"},{"a":3,"n":"Doctor","t":4,"rt":$n[5].Doctor,"sn":"Doctor"},{"a":3,"n":"Target","t":4,"rt":Bed,"sn":"Target"},{"a":3,"n":"Vampire","t":4,"rt":$n[3].Vampire,"sn":"Vampire"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_targetState","t":4,"rt":State,"sn":"_targetState"},{"a":1,"backing":true,"n":"<NeedTransit>k__BackingField","t":4,"rt":$n[0].Boolean,"sn":"NeedTransit","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
     /*Transition end.*/
 
     /*IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty start.*/
@@ -1719,15 +2025,15 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.MoveTransition#Update", this )
     /*IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty end.*/
 
     /*Vampire.Vampire start.*/
-    $m("Vampire.Vampire", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"Heal","t":8,"sn":"Heal","rt":$n[0].Void},{"a":2,"n":"StartToHeal","t":8,"sn":"StartToHeal","rt":$n[0].Void},{"a":2,"n":"ToFirst","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"ToFirst","rt":$n[0].Void,"p":[Bed]},{"a":2,"n":"IsFirst","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsFirst","t":8,"rt":$n[0].Boolean,"fg":"IsFirst","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsFirst"},{"a":2,"n":"IsHealthy","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsHealthy","t":8,"rt":$n[0].Boolean,"fg":"IsHealthy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsHealthy"},{"a":1,"n":"Reward","t":16,"rt":$n[0].Int32,"g":{"a":1,"n":"get_Reward","t":8,"rt":$n[0].Int32,"fg":"Reward","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"Reward"},{"a":2,"n":"Target","t":16,"rt":Bed,"g":{"a":2,"n":"get_Target","t":8,"rt":Bed,"fg":"Target"},"fn":"Target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":2,"n":"ExitPoint","t":4,"rt":$n[4].Transform,"sn":"ExitPoint"},{"a":1,"n":"_isFirst","t":4,"rt":$n[0].Boolean,"sn":"_isFirst","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isHealthy","t":4,"rt":$n[0].Boolean,"sn":"_isHealthy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_renderer","t":4,"rt":$n[4].SpriteRenderer,"sn":"_renderer"},{"a":1,"n":"_reward","t":4,"rt":$n[0].Int32,"sn":"_reward","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_target","t":4,"rt":Bed,"sn":"_target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"healSprite","t":4,"rt":$n[4].Sprite,"sn":"healSprite"}]}; }, $n);
+    $m("Vampire.Vampire", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"Heal","t":8,"sn":"Heal","rt":$n[0].Void},{"a":2,"n":"InitPoint","t":8,"pi":[{"n":"vampireExitPoint","pt":$n[1].Transform,"ps":0},{"n":"money","pt":$n[4].MoneyConroller,"ps":1}],"sn":"InitPoint","rt":$n[0].Void,"p":[$n[1].Transform,$n[4].MoneyConroller]},{"a":2,"n":"StartToHeal","t":8,"sn":"StartToHeal","rt":$n[0].Void},{"a":2,"n":"ToFirst","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"ToFirst","rt":$n[0].Void,"p":[Bed]},{"a":2,"n":"ExitPoint","t":16,"rt":$n[1].Transform,"g":{"a":2,"n":"get_ExitPoint","t":8,"rt":$n[1].Transform,"fg":"ExitPoint"},"fn":"ExitPoint"},{"a":2,"n":"IsFirst","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsFirst","t":8,"rt":$n[0].Boolean,"fg":"IsFirst","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsFirst"},{"a":2,"n":"IsHealthy","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsHealthy","t":8,"rt":$n[0].Boolean,"fg":"IsHealthy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsHealthy"},{"a":2,"n":"Money","t":16,"rt":$n[4].MoneyConroller,"g":{"a":2,"n":"get_Money","t":8,"rt":$n[4].MoneyConroller,"fg":"Money"},"fn":"Money"},{"a":1,"n":"Reward","t":16,"rt":$n[0].Int32,"g":{"a":1,"n":"get_Reward","t":8,"rt":$n[0].Int32,"fg":"Reward","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"Reward"},{"a":2,"n":"Target","t":16,"rt":Bed,"g":{"a":2,"n":"get_Target","t":8,"rt":Bed,"fg":"Target"},"fn":"Target"},{"a":1,"n":"_exitPoint","t":4,"rt":$n[1].Transform,"sn":"_exitPoint"},{"a":1,"n":"_isFirst","t":4,"rt":$n[0].Boolean,"sn":"_isFirst","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isHealthy","t":4,"rt":$n[0].Boolean,"sn":"_isHealthy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_money","t":4,"rt":$n[4].MoneyConroller,"sn":"_money"},{"a":1,"n":"_renderer","t":4,"rt":$n[1].SpriteRenderer,"sn":"_renderer"},{"a":1,"n":"_reward","t":4,"rt":$n[0].Int32,"sn":"_reward","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_target","t":4,"rt":Bed,"sn":"_target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"healSprite","t":4,"rt":$n[1].Sprite,"sn":"healSprite"}]}; }, $n);
     /*Vampire.Vampire end.*/
 
     /*Vampire.Vampires start.*/
-    $m("Vampire.Vampires", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AddVampire","t":8,"pi":[{"n":"vampire","pt":$n[2].Vampire,"ps":0}],"sn":"AddVampire","rt":$n[0].Void,"p":[$n[2].Vampire]},{"a":2,"n":"AssignBedToFirstAvailable","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"AssignBedToFirstAvailable","rt":$n[0].Void,"p":[Bed]},{"a":2,"n":"GetVampireCount","t":8,"sn":"GetVampireCount","rt":$n[0].Int32,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"MoveRemainingVampires","t":8,"sn":"MoveRemainingVampires","rt":$n[0].Void},{"a":1,"n":"SmoothMove","t":8,"pi":[{"n":"transformToMove","pt":$n[4].Transform,"ps":0},{"n":"targetPosition","pt":$n[4].Vector3,"ps":1}],"sn":"SmoothMove","rt":$n[6].IEnumerator,"p":[$n[4].Transform,$n[4].Vector3]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moveSpeed","t":4,"rt":$n[0].Single,"sn":"_moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_vampires","t":4,"rt":$n[1].List$1(Vampire.Vampire),"sn":"_vampires"},{"a":1,"n":"_waitingPositions","t":4,"rt":$n[1].Queue$1(UnityEngine.Vector3),"sn":"_waitingPositions"}]}; }, $n);
+    $m("Vampire.Vampires", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"AddVampire","t":8,"pi":[{"n":"vampire","pt":$n[3].Vampire,"ps":0}],"sn":"AddVampire","rt":$n[0].Void,"p":[$n[3].Vampire]},{"a":2,"n":"AssignBedToFirstAvailable","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"AssignBedToFirstAvailable","rt":$n[0].Void,"p":[Bed]},{"a":1,"n":"GetLastWaitingPosition","t":8,"sn":"GetLastWaitingPosition","rt":$n[1].Vector3},{"a":2,"n":"GetVampireCount","t":8,"sn":"GetVampireCount","rt":$n[0].Int32,"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"MoveRemainingVampires","t":8,"sn":"MoveRemainingVampires","rt":$n[0].Void},{"a":1,"n":"SmoothMove","t":8,"pi":[{"n":"transformToMove","pt":$n[1].Transform,"ps":0},{"n":"targetPosition","pt":$n[1].Vector3,"ps":1}],"sn":"SmoothMove","rt":$n[6].IEnumerator,"p":[$n[1].Transform,$n[1].Vector3]},{"a":1,"n":"SpawnVampireAtEnd","t":8,"sn":"SpawnVampireAtEnd","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_money","t":4,"rt":$n[4].MoneyConroller,"sn":"_money"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moveSpeed","t":4,"rt":$n[0].Single,"sn":"_moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_vampireExitPoint","t":4,"rt":$n[1].Transform,"sn":"_vampireExitPoint"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_vampirePrefab","t":4,"rt":$n[3].Vampire,"sn":"_vampirePrefab"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_vampires","t":4,"rt":$n[2].List$1(Vampire.Vampire),"sn":"_vampires"},{"a":1,"n":"_waitingPositions","t":4,"rt":$n[2].Queue$1(UnityEngine.Vector3),"sn":"_waitingPositions"}]}; }, $n);
     /*Vampire.Vampires end.*/
 
     /*Vampire.VampireStateMachine start.*/
-    $m("Vampire.VampireStateMachine", function () { return {"att":1048577,"a":2,"at":[new UnityEngine.RequireComponent.ctor(UnityEngine.Animator)],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Transit","t":8,"pi":[{"n":"nextState","pt":State,"ps":0}],"sn":"Transit","rt":$n[0].Void,"p":[State]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_animator","t":4,"rt":$n[4].Animator,"sn":"_animator"},{"a":1,"n":"_currentState","t":4,"rt":State,"sn":"_currentState"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_firstState","t":4,"rt":State,"sn":"_firstState"},{"a":1,"n":"_vampire","t":4,"rt":$n[2].Vampire,"sn":"_vampire"}]}; }, $n);
+    $m("Vampire.VampireStateMachine", function () { return {"att":1048577,"a":2,"at":[new UnityEngine.RequireComponent.ctor(UnityEngine.Animator)],"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Transit","t":8,"pi":[{"n":"nextState","pt":State,"ps":0}],"sn":"Transit","rt":$n[0].Void,"p":[State]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_animator","t":4,"rt":$n[1].Animator,"sn":"_animator"},{"a":1,"n":"_currentState","t":4,"rt":State,"sn":"_currentState"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_firstState","t":4,"rt":State,"sn":"_firstState"},{"a":1,"n":"_vampire","t":4,"rt":$n[3].Vampire,"sn":"_vampire"}]}; }, $n);
     /*Vampire.VampireStateMachine end.*/
 
     /*Vampire.VampireTransitions.ExitTransition start.*/
@@ -1739,7 +2045,7 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.MoveTransition#Update", this )
     /*Vampire.VampireTransitions.HealCompleteTransition end.*/
 
     /*Vampire.VampireTransitions.HealRunTransition start.*/
-    $m("Vampire.VampireTransitions.HealRunTransition", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void}]}; }, $n);
+    $m("Vampire.VampireTransitions.HealRunTransition", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void}]}; }, $n);
     /*Vampire.VampireTransitions.HealRunTransition end.*/
 
     /*Vampire.VampireTransitions.HealTransition start.*/
@@ -1755,19 +2061,19 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.MoveTransition#Update", this )
     /*Vampire.VampireTransitions.MoveTransition end.*/
 
     /*Vampire.VampireStates.ExitState start.*/
-    $m("Vampire.VampireStates.ExitState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"PerformExitSequence","t":8,"sn":"PerformExitSequence","rt":$n[6].IEnumerator},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_money","t":4,"rt":$n[3].MoneyConroller,"sn":"_money"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moveSpeed","t":4,"rt":$n[0].Single,"sn":"_moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_rotationSpeed","t":4,"rt":$n[0].Single,"sn":"_rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_targetAngleZ","t":4,"rt":$n[0].Single,"sn":"_targetAngleZ","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_targetTransform","t":4,"rt":$n[4].Transform,"sn":"_targetTransform"}]}; }, $n);
+    $m("Vampire.VampireStates.ExitState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"PerformExitSequence","t":8,"sn":"PerformExitSequence","rt":$n[6].IEnumerator},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_money","t":4,"rt":$n[4].MoneyConroller,"sn":"_money"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_moveSpeed","t":4,"rt":$n[0].Single,"sn":"_moveSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_rotationSpeed","t":4,"rt":$n[0].Single,"sn":"_rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_spriteRenderer","t":4,"rt":$n[1].SpriteRenderer,"sn":"_spriteRenderer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_targetAngleZ","t":4,"rt":$n[0].Single,"sn":"_targetAngleZ","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_targetTransform","t":4,"rt":$n[1].Transform,"sn":"_targetTransform"},{"a":1,"n":"_vampire","t":4,"rt":$n[3].Vampire,"sn":"_vampire"}]}; }, $n);
     /*Vampire.VampireStates.ExitState end.*/
 
     /*Vampire.VampireStates.HealCompleteState start.*/
-    $m("Vampire.VampireStates.HealCompleteState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Heal","t":8,"sn":"Heal","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"_vampire","t":4,"rt":$n[2].Vampire,"sn":"_vampire"}]}; }, $n);
+    $m("Vampire.VampireStates.HealCompleteState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Heal","t":8,"sn":"Heal","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"_vampire","t":4,"rt":$n[3].Vampire,"sn":"_vampire"}]}; }, $n);
     /*Vampire.VampireStates.HealCompleteState end.*/
 
     /*Vampire.VampireStates.HealRunState start.*/
-    $m("Vampire.VampireStates.HealRunState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"Rotate","t":8,"sn":"Rotate","rt":$n[0].Void},{"a":1,"n":"_vampire","t":4,"rt":$n[2].Vampire,"sn":"_vampire"}]}; }, $n);
+    $m("Vampire.VampireStates.HealRunState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"Rotate","t":8,"sn":"Rotate","rt":$n[0].Void},{"a":1,"n":"_vampire","t":4,"rt":$n[3].Vampire,"sn":"_vampire"}]}; }, $n);
     /*Vampire.VampireStates.HealRunState end.*/
 
     /*Vampire.VampireStates.HealState start.*/
-    $m("Vampire.VampireStates.HealState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_rotationSpeed","t":4,"rt":$n[0].Single,"sn":"_rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_targetAngleZ","t":4,"rt":$n[0].Single,"sn":"_targetAngleZ","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("Vampire.VampireStates.HealState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_rotationSpeed","t":4,"rt":$n[0].Single,"sn":"_rotationSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_targetAngleZ","t":4,"rt":$n[0].Single,"sn":"_targetAngleZ","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"spriteRenderer","t":4,"rt":$n[1].SpriteRenderer,"sn":"spriteRenderer"}]}; }, $n);
     /*Vampire.VampireStates.HealState end.*/
 
     /*Vampire.VampireStates.IdleState start.*/
@@ -1775,7 +2081,7 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.MoveTransition#Update", this )
     /*Vampire.VampireStates.IdleState end.*/
 
     /*Vampire.VampireStates.MoveState start.*/
-    $m("Vampire.VampireStates.MoveState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_speed","t":4,"rt":$n[0].Single,"sn":"_speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("Vampire.VampireStates.MoveState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enter","t":8,"pi":[{"n":"animator","pt":$n[1].Animator,"ps":0},{"n":"bed","pt":Bed,"ps":1}],"sn":"Enter","rt":$n[0].Void,"p":[$n[1].Animator,Bed]},{"a":1,"n":"FindClosestWaypointIndex","t":8,"pi":[{"n":"waypoints","pt":System.Array.type(UnityEngine.Transform),"ps":0},{"n":"currentPosition","pt":$n[1].Vector2,"ps":1}],"sn":"FindClosestWaypointIndex","rt":$n[0].Int32,"p":[System.Array.type(UnityEngine.Transform),$n[1].Vector2],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_characterType","t":4,"rt":$n[7].CharacterType,"sn":"_characterType","box":function ($v) { return Bridge.box($v, Doctor.DoctorState.CharacterType, System.Enum.toStringFn(Doctor.DoctorState.CharacterType));}},{"a":1,"n":"_currentWaypointIndex","t":4,"rt":$n[0].Int32,"sn":"_currentWaypointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_firstEnter","t":4,"rt":$n[0].Boolean,"sn":"_firstEnter","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_reachDistance","t":4,"rt":$n[0].Single,"sn":"_reachDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_route","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"_route"},{"a":1,"n":"_speed","t":4,"rt":$n[0].Single,"sn":"_speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*Vampire.VampireStates.MoveState end.*/
 
     /*Vampire.VampireStates.RunState start.*/
@@ -1783,31 +2089,31 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.MoveTransition#Update", this )
     /*Vampire.VampireStates.RunState end.*/
 
     /*Money.BuyButton start.*/
-    $m("Money.BuyButton", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"IncreasePrice","t":8,"sn":"IncreasePrice","rt":$n[0].Void},{"a":2,"n":"Initialize","t":8,"pi":[{"n":"onClickCallback","pt":Function,"ps":0}],"sn":"Initialize","rt":$n[0].Void,"p":[Function]},{"a":1,"n":"UpdatePriceText","t":8,"sn":"UpdatePriceText","rt":$n[0].Void},{"a":2,"n":"CurrentPrice","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_CurrentPrice","t":8,"rt":$n[0].Int32,"fg":"CurrentPrice","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"CurrentPrice"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_button","t":4,"rt":$n[7].Button,"sn":"_button"},{"a":1,"n":"_currentPrice","t":4,"rt":$n[0].Int32,"sn":"_currentPrice","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_priceStep","t":4,"rt":$n[0].Int32,"sn":"_priceStep","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_priceText","t":4,"rt":$n[8].TextMeshProUGUI,"sn":"_priceText"}]}; }, $n);
+    $m("Money.BuyButton", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"IncreasePrice","t":8,"sn":"IncreasePrice","rt":$n[0].Void},{"a":2,"n":"Initialize","t":8,"pi":[{"n":"onClickCallback","pt":Function,"ps":0}],"sn":"Initialize","rt":$n[0].Void,"p":[Function]},{"a":1,"n":"UpdatePriceText","t":8,"sn":"UpdatePriceText","rt":$n[0].Void},{"a":2,"n":"CurrentPrice","t":16,"rt":$n[0].Int32,"g":{"a":2,"n":"get_CurrentPrice","t":8,"rt":$n[0].Int32,"fg":"CurrentPrice","box":function ($v) { return Bridge.box($v, System.Int32);}},"fn":"CurrentPrice"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_button","t":4,"rt":$n[8].Button,"sn":"_button"},{"a":1,"n":"_currentPrice","t":4,"rt":$n[0].Int32,"sn":"_currentPrice","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_priceStep","t":4,"rt":$n[0].Int32,"sn":"_priceStep","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_priceText","t":4,"rt":$n[9].TextMeshProUGUI,"sn":"_priceText"}]}; }, $n);
     /*Money.BuyButton end.*/
 
     /*Money.MoneyConroller start.*/
-    $m("Money.MoneyConroller", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AddMoney","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"AddMoney","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"RemoveMoney","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"RemoveMoney","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"TryToBuy","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"TryToBuy","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_money","t":4,"rt":$n[0].Int32,"sn":"_money","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moneyUI","t":4,"rt":$n[3].MoneyUI,"sn":"moneyUI"}]}; }, $n);
+    $m("Money.MoneyConroller", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"AddMoney","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"AddMoney","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":2,"n":"RemoveMoney","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"RemoveMoney","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"TryToBuy","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"TryToBuy","rt":$n[0].Boolean,"p":[$n[0].Int32],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_money","t":4,"rt":$n[0].Int32,"sn":"_money","box":function ($v) { return Bridge.box($v, System.Int32);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"moneyUI","t":4,"rt":$n[4].MoneyUI,"sn":"moneyUI"}]}; }, $n);
     /*Money.MoneyConroller end.*/
 
     /*Money.MoneyUI start.*/
-    $m("Money.MoneyUI", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"UpdateText","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"UpdateText","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"_moneyText","t":4,"rt":$n[8].TextMeshProUGUI,"sn":"_moneyText"}]}; }, $n);
+    $m("Money.MoneyUI", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"UpdateText","t":8,"pi":[{"n":"money","pt":$n[0].Int32,"ps":0}],"sn":"UpdateText","rt":$n[0].Void,"p":[$n[0].Int32]},{"a":1,"n":"_moneyText","t":4,"rt":$n[9].TextMeshProUGUI,"sn":"_moneyText"}]}; }, $n);
     /*Money.MoneyUI end.*/
 
     /*Doctor.Doctor start.*/
-    $m("Doctor.Doctor", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"CompleteHealing","t":8,"sn":"CompleteHealing","rt":$n[0].Void},{"a":2,"n":"ToHeal","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"ToHeal","rt":$n[0].Void,"p":[Bed]},{"a":2,"n":"IsBusy","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsBusy","t":8,"rt":$n[0].Boolean,"fg":"IsBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsBusy"},{"a":2,"n":"Target","t":16,"rt":Bed,"g":{"a":2,"n":"get_Target","t":8,"rt":Bed,"fg":"Target"},"fn":"Target"},{"a":1,"n":"_isBusy","t":4,"rt":$n[0].Boolean,"sn":"_isBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_target","t":4,"rt":Bed,"sn":"_target"}]}; }, $n);
+    $m("Doctor.Doctor", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"CompleteHealing","t":8,"sn":"CompleteHealing","rt":$n[0].Void},{"a":2,"n":"ToHeal","t":8,"pi":[{"n":"bed","pt":Bed,"ps":0}],"sn":"ToHeal","rt":$n[0].Void,"p":[Bed]},{"a":2,"n":"IsBusy","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsBusy","t":8,"rt":$n[0].Boolean,"fg":"IsBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsBusy"},{"a":2,"n":"Target","t":16,"rt":Bed,"g":{"a":2,"n":"get_Target","t":8,"rt":Bed,"fg":"Target"},"fn":"Target"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_isBusy","t":4,"rt":$n[0].Boolean,"sn":"_isBusy","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_target","t":4,"rt":Bed,"sn":"_target"}]}; }, $n);
     /*Doctor.Doctor end.*/
 
     /*Doctor.DoctorStateMachine start.*/
-    $m("Doctor.DoctorStateMachine", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Transit","t":8,"pi":[{"n":"nextState","pt":State,"ps":0}],"sn":"Transit","rt":$n[0].Void,"p":[State]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_animator","t":4,"rt":$n[4].Animator,"sn":"_animator"},{"a":1,"n":"_currentState","t":4,"rt":State,"sn":"_currentState"},{"a":1,"n":"_doctor","t":4,"rt":$n[5].Doctor,"sn":"_doctor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_firstState","t":4,"rt":State,"sn":"_firstState"}]}; }, $n);
+    $m("Doctor.DoctorStateMachine", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Transit","t":8,"pi":[{"n":"nextState","pt":State,"ps":0}],"sn":"Transit","rt":$n[0].Void,"p":[State]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_animator","t":4,"rt":$n[1].Animator,"sn":"_animator"},{"a":1,"n":"_currentState","t":4,"rt":State,"sn":"_currentState"},{"a":1,"n":"_doctor","t":4,"rt":$n[5].Doctor,"sn":"_doctor"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_firstState","t":4,"rt":State,"sn":"_firstState"}]}; }, $n);
     /*Doctor.DoctorStateMachine end.*/
 
     /*Doctor.DoctorTransition.DoctorHealRunTransition start.*/
-    $m("Doctor.DoctorTransition.DoctorHealRunTransition", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void}]}; }, $n);
+    $m("Doctor.DoctorTransition.DoctorHealRunTransition", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Complete","t":8,"sn":"Complete","rt":$n[6].IEnumerator},{"ov":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_isRunning","t":4,"rt":$n[0].Boolean,"sn":"_isRunning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}}]}; }, $n);
     /*Doctor.DoctorTransition.DoctorHealRunTransition end.*/
 
     /*Doctor.DoctorTransition.DoctorHealTransition start.*/
-    $m("Doctor.DoctorTransition.DoctorHealTransition", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_rangeSpread","t":4,"rt":$n[0].Single,"sn":"_rangeSpread","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_transitionRange","t":4,"rt":$n[0].Single,"sn":"_transitionRange","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("Doctor.DoctorTransition.DoctorHealTransition", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_rangeSpread","t":4,"rt":$n[0].Single,"sn":"_rangeSpread","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_transitionRange","t":4,"rt":$n[0].Single,"sn":"_transitionRange","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*Doctor.DoctorTransition.DoctorHealTransition end.*/
 
     /*Doctor.DoctorTransition.DoctorIdleTransition start.*/
@@ -1818,16 +2124,24 @@ if ( TRACE ) { TRACE( "Vampire.VampireTransitions.MoveTransition#Update", this )
     $m("Doctor.DoctorTransition.DoctorMoveTransition", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enable","t":8,"sn":"Enable","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void}]}; }, $n);
     /*Doctor.DoctorTransition.DoctorMoveTransition end.*/
 
+    /*Doctor.DoctorState.BedRoute start.*/
+    $m("Doctor.DoctorState.BedRoute", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"DoctorWaypoints","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"DoctorWaypoints"},{"a":2,"n":"VampireWaypoints","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"VampireWaypoints"}]}; }, $n);
+    /*Doctor.DoctorState.BedRoute end.*/
+
+    /*Doctor.DoctorState.CharacterType start.*/
+    $m("Doctor.DoctorState.CharacterType", function () { return {"att":257,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Doctor","is":true,"t":4,"rt":$n[7].CharacterType,"sn":"Doctor","box":function ($v) { return Bridge.box($v, Doctor.DoctorState.CharacterType, System.Enum.toStringFn(Doctor.DoctorState.CharacterType));}},{"a":2,"n":"Vampire","is":true,"t":4,"rt":$n[7].CharacterType,"sn":"Vampire","box":function ($v) { return Bridge.box($v, Doctor.DoctorState.CharacterType, System.Enum.toStringFn(Doctor.DoctorState.CharacterType));}}]}; }, $n);
+    /*Doctor.DoctorState.CharacterType end.*/
+
     /*Doctor.DoctorState.DoctorHealState start.*/
-    $m("Doctor.DoctorState.DoctorHealState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"StateName","is":true,"t":4,"rt":$n[0].String,"sn":"StateName"}]}; }, $n);
+    $m("Doctor.DoctorState.DoctorHealState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"StateName","is":true,"t":4,"rt":$n[0].String,"sn":"StateName"}]}; }, $n);
     /*Doctor.DoctorState.DoctorHealState end.*/
 
     /*Doctor.DoctorState.DoctorIdleState start.*/
-    $m("Doctor.DoctorState.DoctorIdleState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"StateName","is":true,"t":4,"rt":$n[0].String,"sn":"StateName"}]}; }, $n);
+    $m("Doctor.DoctorState.DoctorIdleState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"StateName","is":true,"t":4,"rt":$n[0].String,"sn":"StateName"}]}; }, $n);
     /*Doctor.DoctorState.DoctorIdleState end.*/
 
     /*Doctor.DoctorState.DoctorMoveState start.*/
-    $m("Doctor.DoctorState.DoctorMoveState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"StateName","is":true,"t":4,"rt":$n[0].String,"sn":"StateName"},{"a":1,"n":"_speed","t":4,"rt":$n[0].Single,"sn":"_speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
+    $m("Doctor.DoctorState.DoctorMoveState", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"ov":true,"a":2,"n":"Enter","t":8,"pi":[{"n":"animator","pt":$n[1].Animator,"ps":0},{"n":"bed","pt":Bed,"ps":1}],"sn":"Enter","rt":$n[0].Void,"p":[$n[1].Animator,Bed]},{"ov":true,"a":2,"n":"Exit","t":8,"sn":"Exit","rt":$n[0].Void},{"a":1,"n":"FindClosestWaypointIndex","t":8,"pi":[{"n":"waypoints","pt":System.Array.type(UnityEngine.Transform),"ps":0},{"n":"currentPosition","pt":$n[1].Vector2,"ps":1}],"sn":"FindClosestWaypointIndex","rt":$n[0].Int32,"p":[System.Array.type(UnityEngine.Transform),$n[1].Vector2],"box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"_characterType","t":4,"rt":$n[7].CharacterType,"sn":"_characterType","box":function ($v) { return Bridge.box($v, Doctor.DoctorState.CharacterType, System.Enum.toStringFn(Doctor.DoctorState.CharacterType));}},{"a":1,"n":"_currentWaypointIndex","t":4,"rt":$n[0].Int32,"sn":"_currentWaypointIndex","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"_firstEnter","t":4,"rt":$n[0].Boolean,"sn":"_firstEnter","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_reachDistance","t":4,"rt":$n[0].Single,"sn":"_reachDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"_route","t":4,"rt":System.Array.type(UnityEngine.Transform),"sn":"_route"},{"a":1,"n":"_speed","t":4,"rt":$n[0].Single,"sn":"_speed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}}]}; }, $n);
     /*Doctor.DoctorState.DoctorMoveState end.*/
 
     }});

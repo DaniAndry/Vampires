@@ -1,4 +1,6 @@
-﻿namespace Doctor.DoctorTransition
+﻿using UnityEngine;
+
+namespace Doctor.DoctorTransition
 {
     public class DoctorMoveTransition : Transition
     {
@@ -6,12 +8,15 @@
         {
             throw new System.NotImplementedException();
         }
+
         private void Update()
         {
             Target = Doctor.Target;
-            if (Target != null)
+          //  Debug.Log(Target);
+            if (Target != null && !Target.IsRun && !Target.OnPlace)
             {
-                NeedTransit = true; 
+                Target.DoctorOnRun();
+                NeedTransit = true;
             }
         }
     }
